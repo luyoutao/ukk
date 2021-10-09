@@ -1,5 +1,7 @@
 ## Summary: 
-    Given a query string (length n) and a pattern (length m), output all matches including inexact matches. This extends the original Ukkonen's algorithm (O(min(m, n)*k) complexity) but allows partial matches at the 5' or 3' end and mismatches under given error rate. 
+    Given a query string (length n) and a pattern (length m), output all matches including inexact matches (cost k). This 
+    extends the original Ukkonen's algorithm (O(min(m, n)*k) complexity) but allows partial matches at the 5' or 3' end 
+    and mismatches under given error rate. 
 
     Compared with https://github.com/rust-bio/rust-bio/blob/master/src/pattern_matching/ukkonen.rs, it uses error rate instead
     of fixed number of errors and also removes duplicate hits by retaining the best one; 
